@@ -34,10 +34,37 @@
     <link rel="stylesheet" crossorigin href="source_code.css">
   </head>
   <body>
-  	<div class="header">
-  <b>MyHopHub</b>
-</div>
 
+
+
+
+    
+  	<div class="header">
+  <b id="btns1">MyHopHub</b>
+</div>
+<script>
+        document.getElementById('btns1').addEventListener('click', function() {
+            // Array of random URLs
+            const urls = [
+                "https://myhophub.github.io/mods",
+                "https://myhophub.github.io/free",
+                "https://myhophub.github.io/code",
+                "https://myhophub.github.io/app"
+            ];
+
+            // Generate a random index
+            const randomIndex = Math.floor(Math.random() * urls.length);
+
+            // Redirect to the random URL
+            window.location.href = urls[randomIndex];
+        });
+</script>
+
+
+
+
+
+    
 
     <div id="root"></div>
 
@@ -78,5 +105,10 @@ left: 0;
   <b>hosting developers - Shiva Kr Prajapati</b>
 </div>
   
+
+
+
+
+    
 </body>
 </html>
